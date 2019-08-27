@@ -19,8 +19,9 @@
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+
+.banner{
+  animation: zoom-in-out 3s infinite 0s ease-in-out;
 }
 
 @keyframes App-logo-spin {
@@ -30,4 +31,23 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+
+@keyframes zoom-in-out{
+    0%{
+        transform: rotate(xx) scale(1.5);
+        }
+    25%{
+        transform: scale(1.2);
+        }
+    50%{
+        transform: scale(1);
+        }
+    75%{
+        transform: scale(1.2);
+        }
+    100%{
+        transform: rotate(xx) scale(1.5);
+        }
 }
